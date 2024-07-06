@@ -1,5 +1,3 @@
 <template>
-<h1>
-    Bismillah Hirrahmanir Rahim
-</h1>
+   <router-view></router-view>
 </template>

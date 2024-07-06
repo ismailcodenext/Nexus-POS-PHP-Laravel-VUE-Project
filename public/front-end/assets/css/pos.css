@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ====================
+  Reset Default CSS Start
+  ==================== */
+
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --white: #ffffff;
+  --text-color: #000000;
+  --text-color2: #008aee;
+  --primary-color: #008aee;
+  --stroke: #008aee;
+  --hover-color: #bae2ff;
+  --gray: #aaaaaa;
+  --box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 17%);
+  --dark-mode-bg: #292731;
+  --dark-mode-text: #c0c5cb;
+  --content-and-hover-bg: #414141;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--primary-font);
+  margin-top: 0;
+}
+
+p {
+  font-family: var(--primary-font);
+}
+
+span {
+  font-family: var(--primary-font);
+}
+
+a {
+  text-decoration: none !important;
+  font-family: var(--primary-font);
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+  font-family: var(--primary-font);
+}
+
+button {
+  border: none;
+  outline: none;
+  font-family: var(--primary-font);
+}
+
+input {
+  outline: none;
+  font-family: var(--primary-font);
+}
+
+label {
+  font-family: var(--primary-font);
+}
+
+/*====================
+Reset Default CSS End
+====================*/
+
+/* Pos Start */
+
+#pos-main {
+  width: 100%;
+  background: var(--white);
+  padding: 0px 20px 20px 20px;
+  height: 100vh;
+}
+
+/* Navbar Start */
+
+#navbar .nav-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--white);
+  padding: 10px 6px;
+  border-bottom: 2px solid var(--primary-color);
+  box-shadow: var(--box-shadow);
+  font-family: var(--primary-font);
+}
+
+.nav-wrapper .nav-logo img {
+  width: 200px;
+  height: 60px;
+}
+
+#navbar .nav-wrapper .profile {
+  display: flex;
+  gap: 10px;
+  align-items: center !important;
+}
+
+#navbar .profile .profile-wrapper {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+
+#navbar .profile .fullscreen {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 45px;
+}
+
+#navbar .profile .fullscreen img {
+  width: 100%;
+}
+
+#navbar .profile .profile-wrapper img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-wrapper .nav-logo img {
+    width: 170px;
+    height: 45px;
+  }
+
+  #navbar .profile .profile-wrapper {
+    width: 36px;
+    height: 36px;
+  }
+
+  #navbar .profile .fullscreen {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 35px;
+  }
+}
+
+/* Navbar End */
+
+/* Catgaroies Search Start */
+
+.catagories-search-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--primary-font);
+  padding: 14px 0px;
+}
+
+.catagories-search-wrapper .headding h1 {
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.catagories-search-wrapper .headding p {
+  font-size: 14px;
+  color: var(--gray);
+  margin: 0px;
+}
+
+.catagories-search-wrapper .searchbar label {
+  width: 370px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+}
+
+.catagories-search-wrapper .searchbar label .search-icon {
+  display: inline-block;
+  background: var(--primary-color);
+  padding: 6px 10px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.catagories-search-wrapper .searchbar input::placeholder {
+  color: var(--gray) !important;
+}
+
+.catagories-search-wrapper .searchbar input {
+  width: 100%;
+  padding: 0px 10px;
+  font-size: 14px;
+  color: var(--text-color) !important;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .catagories-search-wrapper .searchbar label {
+    width: 270px;
+  }
+
+  .catagories-search-wrapper .headding h1 {
+    font-size: 19px;
+  }
+
+  .catagories-search-wrapper .headding p {
+    font-size: 12px;
+    margin: 0px;
+  }
+
+  .catagories-search-wrapper .searchbar input {
+    padding: 0px 10px;
+    font-size: 12px;
+  }
+
+  .catagories-search-wrapper .searchbar label .search-icon {
+    background: var(--primary-color);
+    padding: 6px 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .catagories-search-wrapper {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--primary-font);
+    padding: 14px 0px;
+  }
+  .catagories-search-wrapper .searchbar label {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* Catgaroies Search End */
+
+/* Pos Product Slider Start */
+.swiper-container {
+  position: relative;
+  width: 100%;
+  padding: 10px 5px 10px 5px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--gray);
+}
+
+.swiper-slide {
+  background: var(--white);
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  height: 180px;
+  transition: 0.4s;
+}
+
+.swiper-slide .slider-item {
+  padding: 20px;
+  color: #008aee;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px 2px rgba(184, 184, 184, 0.171);
+}
+
+.swiper-slide .slider-item .product-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 60px;
+  height: 70px;
+}
+
+.swiper-slide .slider-item .product-img img {
+  width: 100%;
+  background-position: center;
+}
+
+.swiper-slide .slider-item .shadow {
+  display: block;
+  margin: auto;
+  width: 50px;
+  height: 6px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.swiper-slide .title h1 {
+  font-size: 13px;
+  font-family: var(--primary-font);
+  font-weight: bold;
+  color: var(--text-color);
+  padding-top: 20px;
+}
+
+.swiper-button-prev {
+  margin-left: -7px;
+}
+
+.swiper-button-next {
+  margin-right: -7px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--primary-color) !important;
+  color: #000;
+  top: 70%;
+  transform: translateY(-50%);
+  font-size: 20px !important;
+}
+
+.swiper-button-next i,
+.swiper-button-prev i {
+  color: var(--white) !important;
+  font-size: 16px !important;
+}
+
+.swiper-button-next:after {
+  display: none !important;
+}
+
+.swiper-button-prev:after {
+  display: none !important;
+}
+
+/* Pos Product Slider End */
+
+/* Pos Product Card Start */
+
+#product-card {
+  width: 100%;
+  margin-top: 12px;
+}
+
+#product-card .card-wrapper {
+  width: 100%;
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.card-wrapper .product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-wrapper .product-price h1 {
+  font-size: 16px;
+  font-family: var(--primary-font);
+  font-weight: bold;
+  color: var(--text-color2);
+  margin: 0px;
+}
+
+.card-wrapper .product-price span {
+  white-space: nowrap;
+  font-size: 12px;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  color: var(--white);
+  background: var(--primary-color);
+
+}
+
+/* Pos Product Card End */
+
+/* Pos Order List Start */
+
+.Order-list-wrapper {
+  width: 100%;
+  text-align: right;
+  font-family: var(--primary-font);
+  padding-top: 30px;
+}
+
+.Order-list-wrapper .title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.Order-list-wrapper .invoice-id {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-color2);
+}
+
+.Order-list-wrapper p {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+/* Pos Order List End */
+
+/* Pos End */
+

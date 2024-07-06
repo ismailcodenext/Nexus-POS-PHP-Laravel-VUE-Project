@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('img_url')->nullable();
             $table->string('firstName',50);
-            $table->string('lastName',50);
             $table->string('email',50)->unique();
             $table->string('mobile',50);
             $table->string('password',1000);

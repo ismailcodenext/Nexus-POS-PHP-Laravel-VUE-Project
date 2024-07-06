@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
 use Exception;
+use App\Models\User;
+use Dotenv\Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
@@ -45,6 +46,32 @@ class UserController extends Controller
         } catch (Exception $e) {
             return response()->json(['status' => 'fail', 'message' => $e->getMessage()]);
         }
+    }
+
+
+    public function register(Request $request)
+    {
+        // $validator = Validator::make($request->all(), [
+        //     'firstName' => 'required|string|max:50',
+        //     'email' => 'required|string|email|max:50|unique:users',
+        //     'mobile' => 'required|string|max:50',
+        //     'password' => 'required|string|min:8',
+        // ]);
+
+        // if ($validator->fails()) {
+        //     return response()->json(['status' => 'error', 'message' => $validator->errors()], 400);
+        // }
+
+        $user = User::create([
+            'firstName' => $request->firstName,
+            'email' => $request->email,
+            'mobile' => $request->mobile,
+            'password' => Hash::make($request->password),
+            'status' => 'pending',
+            'role' => 'user',
+        ]);
+
+        return response()->json(['status' => 'success', 'user' => $user], 201);
     }
 
 

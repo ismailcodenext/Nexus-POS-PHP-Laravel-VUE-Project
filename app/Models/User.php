@@ -13,11 +13,11 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    protected $fillable = ['img_url','firstName','lastName','email','mobile','password','otp','status','role'];
+    protected $fillable = ['firstName','email','mobile','password','otp','status','role'];
     protected $attributes = ['otp' => '0'];
     protected $hidden = ['password', 'otp'];
 
-    public static function where(string $string, mixed $input)
-    {
-    }
+    // public static function where(string $string, mixed $input)
+    // {
+    // }
 }

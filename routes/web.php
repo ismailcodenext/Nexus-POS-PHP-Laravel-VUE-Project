@@ -9,5 +9,5 @@ Route::get('/{vue_capture?}', function () {
 })->where('vue_capture', '[\/\w\.-]*');
 
 
-Route::post('/user-registration', [UserController::class, 'UserRegistration']);
-Route::get('/user-login', [UserController::class, 'UserLogin']);
+// Route::post('/user-registration', [UserController::class, 'UserRegistration']);
+// Route::get('/user-login', [UserController::class, 'UserLogin']);

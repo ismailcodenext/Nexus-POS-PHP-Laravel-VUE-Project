@@ -6,19 +6,19 @@ import Registration from "../components/auth/Registration.vue";
 
 const routes = [
     {
-      path: '/',
-      name: 'login',
-      component: Login,
-      meta: {
-        title: 'User Login',
+        path: '/',
+        name: 'login',
+        component: Registration,
+        meta: {
+          title: 'User Registration',
+        },
       },
-    },
     {
       path: '/registration',
       name: 'registration',
       component: Registration,
       meta: {
-        title: 'User Registration',
+        title: 'User ',
       },
     },
     {

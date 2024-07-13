@@ -22,6 +22,8 @@
 </div>
 
 @yield('content')
+
+@vite('resources/js/app.js')
 <script src="{{ asset('js/bootstrap.bundle.js') }}"></script>
 </body>
 </html>

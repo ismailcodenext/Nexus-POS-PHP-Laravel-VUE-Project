@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     breakpoints: {
       320: {
-        slidesPerView: 2,
+        slidesPerView: 3,
         spaceBetween: 10
       },
       480: {

@@ -11,3 +11,4 @@ Route::get('/{vue_capture?}', function () {
 
 // Route::post('/user-registration', [UserController::class, 'UserRegistration']);
 // Route::get('/user-login', [UserController::class, 'UserLogin']);
+

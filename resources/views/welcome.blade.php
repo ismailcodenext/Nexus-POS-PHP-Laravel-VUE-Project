@@ -70,21 +70,22 @@
     @vite('resources/js/app.js')
 
 
-    <script src="{{asset('front-end/assets/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('front-end/assets/js/fontawesome.js')}}"></script>
+    <script src="{{asset('front-end/assets/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('front-end/assets/js/metismenujs.min.js')}}"></script>
     <script src="{{asset('front-end/assets/js/simplebar.min.js')}}"></script>
     <script src="{{asset('front-end/assets/js/feather.min.js')}}"></script>
     <script src="{{asset('front-end/assets/js/full-screen-toggle.js')}}"></script>
-    <script src="{{asset('front-end/assets/js/app.js')}}"></script>
+    <script src="{{asset('front-end/assets/js/main.js')}}"></script>
     <script src="{{asset('front-end/assets/js/finance-popup-modal.js')}}"></script>
+    <script src="{{asset('front-end/assets/js/datatables.js')}}"></script>
 
 
         <!-- Include jQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <!-- Include DataTables JS -->
         <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-        {{-- <!-- Include DataTables Buttons JS -->
+        <!-- Include DataTables Buttons JS -->
         <script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
         <!-- Include JSZip for Excel export -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
@@ -95,14 +96,10 @@
         <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
         <!-- Include Print button -->
         <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
-        <script src="{{asset('front-end/assets/js/datatables.js')}}"></script>
 
         <!-- Deathpicker js -->
-        <script
-          src="{{asset('front-end/assets/js/bootstrap-datepicker.js')}}"
-          type="text/javascript"
-        ></script>
-        <script src="{{asset('front-end/assets/js/dethpicker.js')}}" type="text/javascript"></script> --}}
+        <script src="{{asset('front-end/assets/js/bootstrap-datepicker.js')}}"></script>
+        <script src="{{asset('front-end/assets/js/dethpicker.js')}}" type="text/javascript"></script>
 
 </body>
 </html>
